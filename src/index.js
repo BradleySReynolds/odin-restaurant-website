@@ -7,8 +7,9 @@ const linkArray = [home, menu, contact];
 const linkStringArray = ["home", "menu", "contact"];
 
 const root = document.getElementById("root");
+const navContainer = document.getElementById("nav-con");
 
-root.insertAdjacentHTML("beforebegin", nav);
+navContainer.insertAdjacentHTML("beforebegin", nav);
 
 const links = document.querySelectorAll("a");
 links.forEach((element) => {

@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: Italian;
+  src: url("./Italianno-Regular.ttf");
+}
+body {
+  background-image: url("../images/background-pizza.jpg");
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+header h1 {
+  color: white;
+  margin: 1rem;
+  font-family: "Italian";
+  font-size: 72px;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+header ul li {
+  padding: 0 1rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+#home h1 {
+  color: red;
+}
+
+#menu h1 {
+  color: green;
+}
+
+#contact h1 {
+  color: orange;
+}/*# sourceMappingURL=style.css.map */
