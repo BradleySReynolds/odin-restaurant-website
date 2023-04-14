@@ -20,7 +20,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem;
 
   h1 {
@@ -37,21 +37,51 @@ header {
     list-style-type: none;
 
     li {
-      padding: 0 1rem;
-
       a {
         text-decoration: none;
         color: white;
         font-weight: 300;
         letter-spacing: 2px;
+        padding: 2rem 1rem;
+        z-index: 3;
       }
+
+      a:hover {
+        position: relative;
+        margin-top: -1rem;
+        cursor: pointer;
+      }
+    }
+
+    .underline {
+      border-bottom: 3px solid white;
     }
   }
 }
 
 #home {
-  h1 {
-    color: red;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    p {
+      margin: 1rem 0;
+      color: white;
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    img {
+      height: 400px;
+      width: auto;
+      border-radius: 50%;
+      margin: 1rem;
+    }
   }
 }
 
@@ -64,5 +94,31 @@ header {
 #contact {
   h1 {
     color: orange;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    P {
+      padding: 0.25rem;
+    }
+  }
+
+  i {
+    color: white;
+    font-size: 24px;
+    padding: 0 1rem;
   }
 }
