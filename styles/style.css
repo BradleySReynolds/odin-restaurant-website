@@ -12,6 +12,10 @@
 body {
   background-image: url("../images/background-pizza.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -57,14 +61,16 @@ header ul .underline {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  margin: 5rem;
+  margin: 2rem auto;
   background-color: rgba(0, 0, 0, 0.6);
+  width: 60%;
 }
 #home div p {
   margin: 1rem 0;
   color: white;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
 }
 #home div img {
   height: 400px;
@@ -78,7 +84,8 @@ header ul .underline {
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 #menu div {
   display: flex;
@@ -87,7 +94,7 @@ header ul .underline {
   flex-direction: column;
   width: 400px;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 2rem;
   margin: 2rem auto;
 }
@@ -113,8 +120,23 @@ header ul .underline {
   padding-bottom: 1rem;
 }
 
-#contact h1 {
-  color: orange;
+#contact .contact-con {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 60%;
+}
+#contact .contact-con div {
+  display: flex;
+  padding: 1rem;
+  color: white;
+}
+#contact .contact-con div i {
+  padding-right: 0.5rem;
+}
+#contact .contact-con img {
+  width: 95%;
+  height: auto;
 }
 
 footer {
@@ -130,6 +152,7 @@ footer div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 footer div P {
   padding: 0.25rem;
@@ -151,9 +174,54 @@ footer i {
     width: 200px;
     height: auto;
   }
+  #contact .contact-con img {
+    width: 90%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 800px) {
+  #home div p {
+    font-size: 16px;
+  }
+  #home div img {
+    width: 90%;
+    height: auto;
+  }
   #menu {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  #home div {
+    width: 90%;
+  }
+  #menu {
+    width: 90%;
+    grid-gap: 0;
+  }
+  #menu div {
+    width: 200px;
+    padding: 0.5rem;
+    width: 90%;
+  }
+  #menu div h2 {
+    font-size: 16px;
+  }
+  #menu div img {
+    width: 150px;
+    height: auto;
+  }
+  #menu div p {
+    font-size: 12px;
+  }
+  #contact .contact-con {
+    width: 90%;
+  }
+  #contact .contact-con img {
+    width: 99%;
+    height: auto;
+  }
+  footer {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
